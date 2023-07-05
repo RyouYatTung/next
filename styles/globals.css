@@ -8,6 +8,15 @@
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
 
+@layer utilities {
+  .font-inter {
+    /* クラスのスタイルを定義する */
+    /* 例: フォントファミリーを設定する */
+    font-family: "Inter", sans-serif;
+    /* 他のスタイルプロパティも追加できます */
+  }
+}
+
 .main {
   width: 100vw;
   min-height: 100vh;
@@ -96,7 +105,7 @@
 }
 
 .search_input {
-  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
+  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5  pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
 }
 
 .copy_btn {
@@ -127,7 +136,7 @@
 
 /* Nav Component */
 .logo_text {
-  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+  @apply max-sm:hidden  font-semibold text-lg text-black tracking-wide;
 }
 
 .dropdown {
