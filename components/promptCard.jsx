@@ -1,7 +1,7 @@
 import React from "react";
 
-const promptCard = () => {
+const PromptCard = () => {
   return <div>promptCard</div>;
 };
 
-export default promptCard;
+export default PromptCard;
