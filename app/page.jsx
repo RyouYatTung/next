@@ -1,17 +1,28 @@
-import Feed from "@components/Feed";
+import "@styles/globals.css";
 
-const Home = () => {
-  return (
-    <section className="w-full flex-center flex-col">
-      <h1 className="head_text text-center">
-        My first Next.js page
-        <br className="max-md:hidden" />
-        <span className="orange_gradient text-center">AI-Powered Prompts</span>
-      </h1>
+import Nav from "@components/Nav";
+import Provider from "@components/Provider";
 
-      <Feed />
-    </section>
-  );
+export const metadata = {
+  title: "Promptopia",
+  description: "Discover & Share AI Prompts",
 };
 
-export default Home;
+const RootLayout = ({ children }) => (
+  <html lang="en">
+    <body>
+      <Provider>
+        <div className="main">
+          <div className="gradient" />
+        </div>
+
+        <main className="app">
+          <Nav />
+          {children}
+        </main>
+      </Provider>
+    </body>
+  </html>
+);
+
+export default RootLayout;
